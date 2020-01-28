@@ -80,13 +80,18 @@ toc:
 ##############################
 ## Mathjax
 mathjax: true # false (default), true
-mathjax_autoNumber: true # false (default), true
+mathjax_autoNumber: false # false (default), true
 
 ## Mermaid
 mermaid: true # false (default), true
 
 ## Chart
 chart: true # false (default), true
+
+## => Scholar
+##############################
+scholar:
+  style: apa
 
 ## => Paginate
 ##############################
@@ -209,3 +214,4 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll/scholar
