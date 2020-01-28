@@ -88,6 +88,11 @@ mermaid: true # false (default), true
 ## Chart
 chart: true # false (default), true
 
+## => Scholar
+##############################
+scholar:
+  style: apa
+
 ## => Paginate
 ##############################
 paginate: 8
@@ -209,3 +214,4 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll/scholar

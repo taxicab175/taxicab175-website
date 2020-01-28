@@ -1,0 +1,129 @@
+@paper{AAAI1816976,
+  author = {Todd Hester and Matej Vecerik and Olivier Pietquin and Marc Lanctot and Tom Schaul and Bilal Piot and Dan Horgan and John Quan and Andrew Sendonaris and Ian Osband and Gabriel Dulac-Arnold and John Agapiou and Joel Leibo and Audrunas Gruslys},
+  title = {Deep Q-learning From Demonstrations},
+  conference = {AAAI Conference on Artificial Intelligence},
+  year = {2018},
+  keywords = {Reinforcement Learning; Learning from Demonstratinos},
+  abstract = {Deep reinforcement learning (RL) has achieved several high profile successes in difficult decision-making problems. However, these algorithms typically require a huge amount of data before they reach reasonable performance. In fact, their performance during learning can be extremely poor. This may be acceptable for a simulator, but it severely limits the applicability of deep RL to many real-world tasks, where the agent must learn in the real environment. In this paper we study a setting where the agent may access data from previous control of the system. We present an algorithm, Deep Q-learning from Demonstrations (DQfD), that leverages small sets of demonstration data to massively accelerate the learning process even from relatively small amounts of demonstration data and is able to automatically assess the necessary ratio of demonstration data while learning thanks to a prioritized replay mechanism. DQfD works by combining temporal difference updates with supervised classification of the demonstrator’s actions. We show that DQfD has better initial performance than Prioritized Dueling Double Deep Q-Networks (PDD DQN) as it starts with better scores on the first million steps on 41 of 42 games and on average it takes PDD DQN 83 million steps to catch up to DQfD’s performance. DQfD learns to out-perform the best demonstration given in 14 of 42 games. In addition, DQfD leverages human demonstrations to achieve state-of-the-art results for 11 games. Finally, we show that DQfD performs better than three related algorithms for incorporating demonstration data into DQN.},
+
+  url = {https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16976}
+}
+
+@Article{Faußer2015,
+author="Fau{\ss}er, Stefan
+and Schwenker, Friedhelm",
+title="Neural Network Ensembles in Reinforcement Learning",
+journal="Neural Processing Letters",
+year="2015",
+month="Feb",
+day="01",
+volume="41",
+number="1",
+pages="55--69",
+abstract="The integration of function approximation methods into reinforcement learning models allows for learning state- and state-action values in large state spaces. Model-free methods, like temporal-difference or SARSA, yield good results for problems where the Markov property holds. However, methods based on a temporal-difference are known to be unstable estimators of the value functions, when used with function approximation. Such unstable behavior depends on the Markov chain, the discounting value and the chosen function approximator. In this paper, we propose a meta-algorithm to learn state- or state-action values in a neural network ensemble, formed by a committee of multiple agents. The agents learn from joint decisions. It is shown that the committee benefits from the diversity on the estimation of the values. We empirically evaluate our algorithm on a generalized maze problem and on SZ-Tetris. The empirical evaluations confirm our analytical results.",
+issn="1573-773X",
+doi="10.1007/s11063-013-9334-5",
+url="https://doi.org/10.1007/s11063-013-9334-5"
+}
+
+@Article{Mnih2015,
+author={Mnih, Volodymyr
+and Kavukcuoglu, Koray
+and Silver, David
+and Rusu, Andrei A.
+and Veness, Joel
+and Bellemare, Marc G.
+and Graves, Alex
+and Riedmiller, Martin
+and Fidjeland, Andreas K.
+and Ostrovski, Georg
+and Petersen, Stig
+and Beattie, Charles
+and Sadik, Amir
+and Antonoglou, Ioannis
+and King, Helen
+and Kumaran, Dharshan
+and Wierstra, Daan
+and Legg, Shane
+and Hassabis, Demis},
+title={Human-level control through deep reinforcement learning},
+journal={Nature},
+year={2015},
+volume={518},
+number={7540},
+pages={529-533},
+abstract={An artificial agent is developed that learns to play?a diverse range of classic Atari 2600 computer games directly from sensory experience, achieving a?performance comparable to that of an expert human player; this work paves the way to building general-purpose learning algorithms that bridge the divide between perception and action.},
+issn={1476-4687},
+doi={10.1038/nature14236},
+url={https://doi.org/10.1038/nature14236}
+}
+
+@article{DBLP:journals/corr/HeessTSLMWTEWER17,
+  author    = {Nicolas Heess and
+               Dhruva TB and
+               Srinivasan Sriram and
+               Jay Lemmon and
+               Josh Merel and
+               Greg Wayne and
+               Yuval Tassa and
+               Tom Erez and
+               Ziyu Wang and
+               S. M. Ali Eslami and
+               Martin A. Riedmiller and
+               David Silver},
+  title     = {Emergence of Locomotion Behaviours in Rich Environments},
+  journal   = {CoRR},
+  volume    = {abs/1707.02286},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1707.02286},
+  archivePrefix = {arXiv},
+  eprint    = {1707.02286},
+  timestamp = {Mon, 22 Jul 2019 16:19:02 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/HeessTSLMWTEWER17},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@book{Goodfellow-et-al-2016,
+    title={Deep Learning},
+    author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+    publisher={MIT Press},
+    note={\url{http://www.deeplearningbook.org}},
+    year={2016}
+}
+
+@INPROCEEDINGS{duckietown,
+author={L. {Paull} and J. {Tani} and H. {Ahn} and J. {Alonso-Mora} and L. {Carlone} and M. {Cap} and Y. F. {Chen} and C. {Choi} and J. {Dusek} and Y. {Fang} and D. {Hoehener} and S. {Liu} and M. {Novitzky} and I. F. {Okuyama} and J. {Pazis} and G. {Rosman} and V. {Varricchio} and H. {Wang} and D. {Yershov} and H. {Zhao} and M. {Benjamin} and C. {Carr} and M. {Zuber} and S. {Karaman} and E. {Frazzoli} and D. {Del Vecchio} and D. {Rus} and J. {How} and J. {Leonard} and A. {Censi}},
+booktitle={2017 IEEE International Conference on Robotics and Automation (ICRA)},
+title={Duckietown: An open, inexpensive and flexible platform for autonomy education and research},
+year={2017},
+volume={},
+number={},
+pages={1497-1504},
+keywords={cameras;collision avoidance;control engineering education;educational robots;mobile robots;pedestrians;robot vision;SLAM (robots);open platform;flexible platform;autonomy education and research;inexpensive platform;autonomous vehicles;Duckiebots;off-the-shelf components;transportation;Duckietown platform;monocular camera;Raspberry Pi 2;lane following;obstacle avoidance;pedestrians;global map;collision avoidance;Cameras;Roads;Robot sensing systems;Image color analysis;Education;Lighting;Calibration},
+doi={10.1109/ICRA.2017.7989179},
+ISSN={null},
+month={May},}
+
+@article{aido,
+  title={The AI Driving Olympics at NeurIPS 2018},
+  author={Julian Zilly and Jacopo Tani and Breandan Considine and Bhairav Mehta and Andrea F. Daniele and Manfred Diaz and Gianmarco Bernasconi and Claudio Ruch and Jan Hakenberg and Florian Golemo and A. Kirsten Bowser and Matthew R. Walter and Ruslan Hristov and Sunil Mallya and Emilio Frazzoli and Andrea Censi and Liam Paull},
+  journal={arXiv preprint arXiv:1903.02503},
+  year={2019}
+}
+
+@InProceedings{soft-actor-critic,
+  title = 	 {Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor},
+  author = 	 {Haarnoja, Tuomas and Zhou, Aurick and Abbeel, Pieter and Levine, Sergey},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {1861--1870},
+  year = 	 {2018},
+  editor = 	 {Dy, Jennifer and Krause, Andreas},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Stockholmsmässan, Stockholm Sweden},
+  month = 	 {10--15 Jul},
+  publisher = 	 {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/haarnoja18b/haarnoja18b.pdf},
+  url = 	 {http://proceedings.mlr.press/v80/haarnoja18b.html},
+  abstract = 	 {Model-free deep reinforcement learning (RL) algorithms have been demonstrated on a range of challenging decision making and control tasks. However, these methods typically suffer from two major challenges: very high sample complexity and brittle convergence properties, which necessitate meticulous hyperparameter tuning. Both of these challenges severely limit the applicability of such methods to complex, real-world domains. In this paper, we propose soft actor-critic, an off-policy actor-critic deep RL algorithm based on the maximum entropy reinforcement learning framework. In this framework, the actor aims to maximize expected reward while also maximizing entropy. That is, to succeed at the task while acting as randomly as possible. Prior deep RL methods based on this framework have been formulated as Q-learning methods. By combining off-policy updates with a stable stochastic actor-critic formulation, our method achieves state-of-the-art performance on a range of continuous control benchmark tasks, outperforming prior on-policy and off-policy methods. Furthermore, we demonstrate that, in contrast to other off-policy algorithms, our approach is very stable, achieving very similar performance across different random seeds.}
+}
