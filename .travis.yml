@@ -9,7 +9,7 @@ branches:
   only:
     - master
 
-script: bundle exec jekyll build --quiet
+script: bundle exec jekyll build
 
 deploy:
   provider: pages
@@ -18,6 +18,6 @@ deploy:
   keep_history: true
   on:
     branch: master
-  local_dir: build
+  local_dir: _site
   repo: taxicab175/taxicab175.github.io
   target_branch: master
