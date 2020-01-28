@@ -68,23 +68,24 @@ You can make select a time using https://calendly.com/uci-cs175rl-w20
 One of the key measures of a reinforcement learning algorithm is its sample
 efficiency. Despite the recent success of deep reinforcement learning on a wide
 variety of tasks {% cite Mnih2015 DBLP:journals/corr/HeessTSLMWTEWER17 %}, it is
-still difficult to train a policy efficiently. One popular approach to solving
-this problem is to incorporate demonstrations from humans or other controllers,
-as in {% cite AAAI1816976 %}. Demonstrations provide a "starting point" for the
-agent, so that it does not have to waste steps wandering the environment.
-Meanwhile, looking at supervised learning, a common approach to improve
-performance involves ensembles, essentially collections of models whose
-predictions are aggregated to create a more accurate prediction
-{% cite Goodfellow-et-al-2016 %}. Though ensembles have been attempted before in
-deep reinforcement learning, they have not gained much traction. Yet, we believe
-ensembles may hold some promise, as {% cite Faußer2015 %} has shown that feeding
-environment interactions to an ensemble, instead of a single agent, can lead to
-better performance. Thus, we seek to combine these two approaches --
-demonstrations and ensembles, and investigate their effects on sample efficiency
-and performance. Specifically, we seek to implement our algorithms (likely an
-actor-critic method such as {% cite soft-actor-critic %}) in the Duckietown
-platform {% cite duckietown %} and ultimately compete in the lane following
-challenges of the AI Driving Olympics {% cite aido %}.
+still difficult to train an agent in a manner that is both performant and sample
+efficient. One popular approach to solving this problem is to incorporate
+demonstrations from humans or other controllers, as in {% cite AAAI1816976 %}.
+Demonstrations provide a "starting point" for the agent, so that it does not
+have to waste steps wandering the environment. Meanwhile, looking at supervised
+learning, a common approach to improve performance involves ensembles,
+essentially collections of models whose predictions are aggregated to create a
+more accurate prediction {% cite Goodfellow-et-al-2016 %}. Though ensembles have
+been attempted before in deep reinforcement learning, they have not gained much
+traction. Yet, we believe they may hold some promise, as {% cite Faußer2015 %}
+has shown that feeding environment interactions to an ensemble, instead of a
+single agent, can lead to better performance on tasks such as SZ-Tetris. Thus,
+we seek to combine these two approaches -- demonstrations and ensembles, and
+investigate their effects on sample efficiency and performance. Specifically, we
+seek to implement our algorithms (likely an actor-critic method such as
+{% cite soft-actor-critic %}) in the Duckietown platform {% cite duckietown %}
+and ultimately compete in the lane following challenges of the AI Driving
+Olympics {% cite aido %}.
 
 ## Evaluation Plan
 
@@ -115,17 +116,16 @@ performance and sample efficiency.
 
 ### Qualitative
 
-We will evaluate our performance qualitatively by looking watching videos of our
-agents' performance in the Duckietown simulation (and perhaps in real world). We
-will know our agent is working if it is successfully completing the lane
-following challenges, i.e. driving along the road in the simulation. To
-visualize the internals of our algorithm, we will plot the average return of the
-agent after various numbers of environment interactions and training steps, as
-well as the loss functions of our neural networks. In general, loss should
-converge to zero, while return should increase and stabilize at an asymptote. As
-a stretch, we would evaluate our algorithm on a physical Duckiebot at UCI; as
-the ultimate moonshot, we would submit our algorithm to the upcoming AIDO and
-take first place at the competition.
+We will evaluate our performance qualitatively by watching videos of our agents'
+performance in the Duckietown simulation (and perhaps in real world). We will
+know our agent is working if it is successfully completing the lane following
+challenges, i.e. driving along the road in the simulation. To visualize the
+internals of our algorithm, we will plot the average return of the agent after
+various numbers of environment interactions and training steps, as well as the
+loss functions of our neural networks. In general, loss should converge to zero,
+while return should increase and stabilize at an asymptote. As a stretch, we
+could evaluate our algorithm on a physical Duckiebot at UCI, and as the ultimate
+moonshot, we could submit our algorithm to the upcoming iteration of the AIDO.
 
 ## Goals
 
