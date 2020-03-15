@@ -16,8 +16,12 @@ offering of CS 175, taught by Professor [Roy Fox](https://royf.org).
 
 ### SAC on Default Environment, 200k training steps
 
-<iframe width="560" height="315" style="max-width:100%;display:block;margin:auto;" src="https://www.youtube.com/embed/dgNZG6V5d9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div>{%- include extensions/youtube.html id='dgNZG6V5d9A' -%}</div>
 
 ### SAC on Straight Track Environment, 40k training steps
 
-<iframe width="560" height="315" style="max-width:100%;display:block;margin:auto;" src="https://www.youtube.com/embed/lu4tbP2URtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div>{%- include extensions/youtube.html id='lu4tbP2URtg' -%}</div>
+
+### SAC on Longer Straight Track Environment
+
+<div>{%- include extensions/youtube.html id='HeuEx0bq5ls' -%}</div>
